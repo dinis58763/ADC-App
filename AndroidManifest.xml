@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="pt.unl.fct.di.landcommunity"
+    tools:ignore="CoarseFineLocation,ExtraText">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Instant Messaging -->
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Open Maps -->
+    <permission
+        android:name="com.example.Test_GoogleMap.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.example.Test_GoogleMap.permission.MAPS_RECEIVE"/>
+
+    <!-- android:roundIcon="@mipmap/ic_launcher_round" -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_land_community"
+        android:label="Land\nCommunity"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+                     TODO: Before you run your application, you need a Google Maps API key.
+                     To get one, follow the directions here:
+                        https://developers.google.com/maps/documentation/android-sdk/get-api-key
+                     Once you have your API key (it starts with "AIza"), define a new property in your
+                     project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+                     "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+                -->
+
+        <activity android:name=".Splashscreen"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".DeleteActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".HelpActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".LogoutActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".SettingsInactiveActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".UpdateActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".UpdatePasswordActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".MainMenuActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".MainMenuInactiveActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".RegisterInstallmentActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".ChatActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".EditInstallmentActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".ListInstallmentActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".ListviewActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".MapsListInstallmentActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".MapsEditInstallmentActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".StatsActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <activity
+            android:name=".MapsListAllInstallmentsActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Add Other activities like this -->
+
+        <!-- Add Other activities like this -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD6gfY4tXO6y2RTQU5A7dA43Cz71WpPhaw" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            android:label="@string/title_activity_maps">
+
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
